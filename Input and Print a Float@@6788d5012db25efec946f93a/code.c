@@ -7,6 +7,6 @@ char* welcome(n) {
 
 int main() {
     float n;
-    welcome(n)
+    welcome(n);
     return 0;
 }
