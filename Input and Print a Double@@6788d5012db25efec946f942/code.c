@@ -1,8 +1,8 @@
 #include <stdio.h>
 
 char* welcome(num) {
-    scanf("%c", &num);
-    printf("You entered: %c", num);
+    scanf("%f", &num);
+    printf("You entered: %f", num);
 }
 
 int main() {
