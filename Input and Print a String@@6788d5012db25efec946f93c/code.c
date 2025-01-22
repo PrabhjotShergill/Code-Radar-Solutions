@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 char* welcome(str) {
-    scanf("%s", &str);
+    scanf("%s", str);
     printf("You entered: %s", str);
 }
 
