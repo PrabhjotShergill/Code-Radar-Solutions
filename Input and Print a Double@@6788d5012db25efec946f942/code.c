@@ -6,7 +6,7 @@ char* welcome(num) {
 }
 
 int main() {
-    double float num;
+    float num;
     welcome(num);
     return 0;
 }
