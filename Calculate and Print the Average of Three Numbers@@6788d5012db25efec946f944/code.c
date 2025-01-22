@@ -1,10 +1,10 @@
 #include <stdio.h>
 
 char* welcome(a, b, c) {
-    scanf("%d", &a);
-    scanf("%d", &b);
-    scanf("%d", &c);
-    printf("Average: %.2f", (a+b+c)/3);
+    scanf("%lf", &a);
+    scanf("%lf", &b);
+    scanf("%lf", &c);
+    printf("Average: %.2lf", (a+b+c)/3);
 }
 
 int main() {
