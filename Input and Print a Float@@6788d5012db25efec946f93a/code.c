@@ -2,7 +2,7 @@
 
 char* welcome(n) {
     scanf("%d", n);
-    printf("You entered: %d", n);
+    printf("You entered: %f", n);
 }
 
 int main() {
