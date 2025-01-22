@@ -4,14 +4,12 @@ char* welcome(a, b, c) {
     scanf("%lf", &a);
     scanf("%lf", &b);
     scanf("%lf", &c);
-    printf("Average: %.2lf", (a+b+c)/3);
+    result = (a+b+c)/3;
+    printf("Average: %.2lf", result);
 }
 
 int main() {
-    double a;
-    double b;
-    double c;
-
+    double a, b, c, result;
     welcome(a, b, c);
     return 0;
 }
