@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-char* welcome(a, b, c) {
+double welcome(a, b, c) {
     scanf("%lf", &a);
     scanf("%lf", &b);
     scanf("%lf", &c);
