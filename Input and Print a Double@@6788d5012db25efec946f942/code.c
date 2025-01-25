@@ -1,12 +1,7 @@
-#include <stdio.h>
-
-char* welcome(num) {
-    scanf("%f", &num);
-    printf("You entered: %f", num);
-}
-
-int main() {
-    float num;
-    welcome(num);
+#include<stdio.h>
+int main(){
+    float a;
+    scanf("%f", &a);
+    printf("You entered: %.4f", a);
     return 0;
 }
