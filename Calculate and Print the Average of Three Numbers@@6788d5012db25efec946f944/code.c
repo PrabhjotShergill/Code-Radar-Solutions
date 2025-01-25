@@ -1,15 +1,12 @@
-#include <stdio.h>
-
-double welcome(a, b, c) {
-    scanf("%lf", &a);
-    scanf("%lf", &b);
-    scanf("%lf", &c);
-    result = (a+b+c)/3;
-    printf("Average: %.2lf", result);
-}
-
-int main() {
-    double a, b, c, result;
-    welcome(a, b, c);
+#include<stdio.h>
+int main(){
+    int a;
+    int b;
+    int c;
+    scanf("%d", &a);
+    scanf("%d", &b);
+    scanf("%d", &c);
+    float result = (a+b+c)/3;
+    printf("Average: %.2f", result);
     return 0;
 }
