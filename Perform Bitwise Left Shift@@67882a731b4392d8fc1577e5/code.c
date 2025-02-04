@@ -1,8 +1,8 @@
 #include <stdio.h>
 int main() {
-    int num, left;
+    int num, left, result;
     scanf("%d %d", num, left);
-    num = num << left;
-    printf("%d", num);
+    result = num << left;
+    printf("%d", result);
     return 0;
 }
