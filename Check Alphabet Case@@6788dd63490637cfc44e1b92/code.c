@@ -2,6 +2,7 @@
 #include<ctype.h>
 int main() {
     char c;
+    scanf("%c", &c);
     if(islower(c)){
         printf("Lowercase");
     }
