@@ -8,7 +8,7 @@ int main() {
         return 0;
     }
     else{    
-        for(int i=2; i<a-1; i++){
+        for(int i=2; i*i<=a; i++){
             if(a%i==0){
                 flag = 1;
                 break;
