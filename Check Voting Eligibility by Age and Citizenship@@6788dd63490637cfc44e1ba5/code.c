@@ -6,9 +6,9 @@ int main() {
         if(citizen == 1){
             printf("Eligible");
         }
-    }
-    else{
-        printf("Not Eligible");
+        else{
+            printf("Not Eligible");
+        }
     }
     return 0;
 }
