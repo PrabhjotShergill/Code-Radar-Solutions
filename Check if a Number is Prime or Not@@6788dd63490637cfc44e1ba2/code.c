@@ -2,13 +2,8 @@
 int main() {
     int a;
     bool flag = 0;
-    scanf("%d", &a);
-    if(a<0){
-        printf("Not Prime");
-        return 0;
-    }
-    else{    
-        for(int i=2; i*i<=a; i++){
+    scanf("%d", &a);    
+        for(int i=2; i<a; i++){
             if(a%i==0){
                 flag = 1;
                 break;
@@ -20,6 +15,5 @@ int main() {
         else{
             printf("Not Prime");
         }
-    }
     return 0;
 }
