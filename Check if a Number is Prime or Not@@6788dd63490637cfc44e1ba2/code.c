@@ -3,7 +3,7 @@ int main() {
     int a;
     bool flag = 0;
     scanf("%d", &a);    
-    for(int i; i<a; i++){
+    for(int i=2; i<a; i++){
         if(a%i==0){
             pintf("Not Prime");
             return 0;
