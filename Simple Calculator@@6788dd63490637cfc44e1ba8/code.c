@@ -4,15 +4,17 @@ int main() {
     char op;
     scanf("%d %d", &a, &b);
     scanf("%c", &op);
-    switch(op){
-        case '+':
-            printf("%d", a+b);
-        case '-':
-            printf("%d", a-b);
-        case '*':
-            printf("%d", a*b);
-        case '/':
-            printf("%d", a/b);
+    if(op == '+'){
+        printf("%d", a+b);
+    }
+    else if(op == '-'){
+        printf("%d", a-b);
+    }
+    else if(op == '*'){
+        printf("%d", a*b);
+    }
+    else(op == '/'){
+        printf("%d", a/b);
     }
     return 0;
 }
