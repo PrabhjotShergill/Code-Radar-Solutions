@@ -5,13 +5,13 @@ int main() {
     char op;
     scanf("%c", &op);
     switch(op){
-        case "+":
+        case '+':
             printf("%d", a+b);
-        case "_":
+        case '-':
             printf("%d", a-b);
-        case "*":
+        case '*':
             printf("%d", a*b);
-        case "/":
+        case '/':
             printf("%d", a/b);
     }
     return 0;
