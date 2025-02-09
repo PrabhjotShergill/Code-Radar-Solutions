@@ -1,15 +1,17 @@
 #include <stdio.h>
 int main() {
-    int a, b, op;
-    scanf("%d %d %d", &a, &b, &op);
+    int a, b;
+    scanf("%d %d", &a, &b);
+    char op;
+    scanf("%c", &op);
     switch(op){
-        case +:
+        case "+":
             printf("%d", a+b);
-        case -:
+        case "_":
             printf("%d", a-b);
-        case *:
+        case "*":
             printf("%d", a*b);
-        case /:
+        case "/":
             printf("%d", a/b);
     }
     return 0;
