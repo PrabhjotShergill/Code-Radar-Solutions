@@ -1,14 +1,28 @@
 #include <stdio.h>
+
+void decimalToBinary(int num) {
+    int binary[32]; 
+    int index = 0;
+
+    if (num == 0) {
+        printf("0");
+        return;
+    }
+
+    while (num > 0) {
+        binary[index++] = num & 1; 
+        num = num >> 1;            
+    }
+
+    for (int i = index  - 1; i >= 0; i--) {
+        printf("%d", binary[i]);
+    }
+}
+
 int main() {
     int num;
-    int result = 0;
     scanf("%d", &num);
-    int temp = num;
-    while(temp > 0){
-        int digit = temp % 2;
-        result = result * 2 + digit;
-        temp = temp / 2;
-    }
-    printf("%d", result);
+    decimalToBinary(num);
+    printf("\n");
     return 0;
 }
