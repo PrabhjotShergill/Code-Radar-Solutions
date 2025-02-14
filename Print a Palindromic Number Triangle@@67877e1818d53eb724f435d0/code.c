@@ -14,8 +14,8 @@ int main(){
                 count++;
             }
             else{
+                --decre;
                 printf("%d", decre);
-                decre--;
             }
         }
         printf("\n");
