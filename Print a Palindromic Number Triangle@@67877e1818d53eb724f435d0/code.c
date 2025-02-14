@@ -4,6 +4,7 @@ int main(){
     scanf("%d", &n);
     for(int i=1; i<=n; i++){
         int count = 1;
+        int decre = i;
         for(int k=1; k<=n-i; k++){
             printf(" ");
         }
@@ -13,7 +14,7 @@ int main(){
                 count++;
             }
             else{
-                printf("%d", count-1);
+                printf("%d", decre);
             }
         }
         printf("\n");
