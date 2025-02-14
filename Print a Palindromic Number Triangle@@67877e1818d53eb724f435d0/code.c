@@ -13,8 +13,7 @@ int main(){
                 count++;
             }
             else{
-                --count;
-                printf("%d", count);
+                printf("%d", count-1);
             }
         }
         printf("\n");
