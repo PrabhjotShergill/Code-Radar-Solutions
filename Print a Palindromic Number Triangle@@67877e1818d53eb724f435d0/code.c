@@ -15,6 +15,7 @@ int main(){
             }
             else{
                 printf("%d", decre);
+                decre--;
             }
         }
         printf("\n");
