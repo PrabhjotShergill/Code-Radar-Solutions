@@ -1,6 +1,6 @@
 #include<stdio.h>
-
-int isPrime(int n){
+#include<stdbool.h>
+bool isPrime(int n){
     for(int i=2; i*i<n; i++){
         if(n%i==0){
             return 0;
@@ -8,6 +8,7 @@ int isPrime(int n){
     }
     return 1;
 }
+
 int main(){
     int t;
     scanf("%d", &t);
