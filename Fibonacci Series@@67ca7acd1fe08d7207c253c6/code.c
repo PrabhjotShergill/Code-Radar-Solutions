@@ -15,7 +15,7 @@ void fibonacciSeries(int n){
 
         else{
             next = t1+t2;
-            printf("%d", next);
+            printf("%d ", next);
             t1 = t2;
             t2 = next;
         }
