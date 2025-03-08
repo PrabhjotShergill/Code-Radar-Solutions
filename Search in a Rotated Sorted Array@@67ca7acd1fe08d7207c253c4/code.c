@@ -3,15 +3,13 @@ int searchInRotatedArray(int arr[], int n, int target){
     int mid = s + (e-s)/2;
     int ans = -1;
     while(s<e){
-        if(arr[mid] > arr[0]){
+        if(arr[mid] >= arr[0]){
             s = mid+1;
+            ans=mid;
         }
         else if(arr[mid] < arr[0]){
             ans = mid;
             e = mid;
-        }
-        else{
-            ans=mid;
         }
 
         mid = s + (e-s)/2;
