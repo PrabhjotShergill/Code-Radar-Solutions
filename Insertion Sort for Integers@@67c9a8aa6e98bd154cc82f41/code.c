@@ -16,7 +16,7 @@ void insertionSort(int arr[], int n){
                 break;
             }
         }
-        arr[j+1] = temp;
+        arr[i] = temp;
     }
 }
 
