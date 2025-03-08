@@ -13,5 +13,7 @@ int searchInRotatedArray(int arr[], int n, int target){
         else{
             return ans;
         }
+
+        mid = s + (e-s)/2;
     }
 }
