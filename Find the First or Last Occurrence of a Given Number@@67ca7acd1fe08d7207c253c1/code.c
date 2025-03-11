@@ -29,11 +29,11 @@ int findOccurrence(int arr[], int n, int target, int mode){
             }
 
             else if(arr[mid] > target){
-                e = mid-1;
+                s = mid+1;
             }
 
             else{
-                s = mid+1;
+                e = mid-1;
             }
         }
         return -1;
