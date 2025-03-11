@@ -3,7 +3,6 @@ int binarySearch(int arr[], int n, int target){
     int mid = s+(e-s)/2;
     while(s<=e){
         if(arr[mid] == target){
-            s = mid+1;
             return mid;
         }
 
