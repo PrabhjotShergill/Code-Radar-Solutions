@@ -6,7 +6,8 @@ int findOccurrence(int arr[], int n, int target, int mode){
             int mid = s+(e-s)/2;
 
             if(arr[mid] == target){
-                return mid;
+                ans=mid;
+                e = mid-1;
             }
 
             else if(arr[mid] > target){
@@ -17,7 +18,7 @@ int findOccurrence(int arr[], int n, int target, int mode){
                 s = mid+1;
             }
         }
-        return -1;
+        return ans;
     }
 
     else{
@@ -25,7 +26,8 @@ int findOccurrence(int arr[], int n, int target, int mode){
             int mid = s+(e-s)/2;
 
             if(arr[mid] == target){
-                return mid;
+                ans = mid;
+                s = mid+1;
             }
 
             else if(arr[mid] > target){
@@ -36,6 +38,6 @@ int findOccurrence(int arr[], int n, int target, int mode){
                 e = mid-1;
             }
         }
-        return -1;
+        return ans;
     }
 }
