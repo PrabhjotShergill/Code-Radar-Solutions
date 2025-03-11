@@ -35,7 +35,7 @@ int findOccurrence(int arr[], int n, int target, int mode){
             }
 
             else{
-                e = mid-1;
+                s = mid+1;
             }
         }
         return ans;
