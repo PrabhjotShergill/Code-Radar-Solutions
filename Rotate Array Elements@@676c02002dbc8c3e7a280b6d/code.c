@@ -14,10 +14,8 @@ int main(){
         temp[(i+k)%n] = arr[i];
     }
 
-    arr = temp;
-
     for(int i=0; i<n; i++){
-        printf("%d\n", arr[i]);
+        printf("%d\n", temp[i]);
     }
     return 0;
 }
