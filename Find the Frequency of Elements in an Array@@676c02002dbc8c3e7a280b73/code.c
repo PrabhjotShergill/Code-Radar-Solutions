@@ -1,4 +1,26 @@
 #include<stdio.h>
+
+void function(int arr[], int n){
+    int visited[n];
+    for(int i=0; i<n; i++){
+        visited[i] = 0;
+    }
+
+    for(int i=0; i<n; i++){
+        if(visited[i] == 1){
+            continue;
+        }
+        int count = 1;
+        for(int j=i+1; j<n; j++){
+            if(arr[i] == arr[j]){
+                count++;
+                visited[j] = 1;
+            }
+        }
+
+        printf("%d %d\n", arr[i], count);
+    }
+}
 int main(){
     int n;
     scanf("%d", &n);
@@ -6,18 +28,6 @@ int main(){
     for(int i=0; i<n; i++){
         scanf("%d ", &arr[i]);
     }
-
-    //sort
-    for(int i=0; i<n-1; i++){
-        for(int j=i+1; j<n; j++){
-            if(arr[i] > arr[j]){
-                arr[i] = arr[j];
-                arr[j] = arr[i];
-            }
-        }
-    }
-    for(int i=0; i<n; i++){
-        printf("%d ", arr[i]);
-    }
+    function(arr, n);
     return 0;
 }
