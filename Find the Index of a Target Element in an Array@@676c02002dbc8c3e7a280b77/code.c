@@ -3,9 +3,11 @@
 int findTarget(int arr[], int target, int n){
     int s=0, e=n-1;
     int mid = s+(e-s)/2;
+    int ans = -1;
     while(s<=e){
         if(arr[mid] == target){
-            return mid;
+            e = mid-1;
+            ans=mid;
         }
 
         else if(arr[mid] < target){
@@ -17,7 +19,7 @@ int findTarget(int arr[], int target, int n){
         }
     }
 
-    return -1; 
+    return ans; 
 }
 int main(){
     int n;
