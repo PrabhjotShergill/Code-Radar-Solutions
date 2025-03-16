@@ -1,5 +1,4 @@
 #include<stdio.h>
-#include<algorithm>
 int main(){
     int n;
     scanf("%d", &n);
