@@ -10,11 +10,11 @@ int main(){
     for(int i=0; i<n; i++){
         int j = i+1;
         if(arr[i] > arr[j]){
-            cout << "Not Sorted";
+            printf("Not Sorted");
             return 0;
         }
     }
 
-    cout << "Sorted";
+    printf("Sorted");
     return 0;
 }
