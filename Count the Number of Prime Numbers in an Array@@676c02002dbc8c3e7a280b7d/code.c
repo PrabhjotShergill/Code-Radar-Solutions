@@ -1,7 +1,7 @@
 #include<stdio.h>
 
 int isPrime(int num){
-    for(int i=2; i*i<num; i++){
+    for(int i=2; i*i<=num; i++){
         if(num%i==0){
             return 0;
         }
@@ -18,7 +18,7 @@ int main(){
     }
 
     for(int j=0; j<n; j++){
-        if(isPrime(j)){
+        if(isPrime(arr[j])){
             count++;
         }
     }
