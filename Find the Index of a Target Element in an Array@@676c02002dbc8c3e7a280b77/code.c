@@ -17,6 +17,8 @@ int findTarget(int arr[], int target, int n){
         else{
             e = mid-1;
         }
+
+        mid = s+(e-s)/2;
     }
 
     return ans; 
