@@ -1,4 +1,5 @@
 #include<stdio.h>
+#include<stdlib.h>
 int main(){
     int n;
     scanf("%d", &n);
@@ -9,10 +10,11 @@ int main(){
     
     for(int i=0; i<n; i++){
         int sum=0;
-        while(arr[i] != 0){
-            int digit = arr[i]%10;
+        int num = abs(arr[i]);
+        while(num != 0){
+            int digit = num%10;
             sum += digit;
-            arr[i] /= 10;
+            num /= 10;
         }
         arr[i] = sum;
     }
