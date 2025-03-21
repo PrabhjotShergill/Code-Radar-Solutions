@@ -10,7 +10,11 @@ int main(){
     
     for(int i=0; i<n; i++){
         int sum=0;
-        int num = abs(arr[i]);
+        // int num = abs(arr[i]);
+        int num = arr[i];
+        if(num < 0){
+            num = -num;
+        }
         while(num != 0){
             int digit = num%10;
             sum += digit;
