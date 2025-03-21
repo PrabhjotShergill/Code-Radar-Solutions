@@ -7,15 +7,15 @@ int main(){
         scanf("%d", &arr[i]);
     }
     int temp[n];
-
+    int index = 0;
     for(int i=0; i<n; i++){
-        if(arr[i] == 0){
-            temp[n-1-i] = arr[i];
+        if(arr[i] != 0){
+            temp[index++] = arr[i];
         }
+    }
 
-        else{
-            temp[i-1] = arr[i];
-        }
+    for(int i=index; i<n; i++){
+        temp[i] = 0;
     }
 
     for(int i=0; i<n; i++){
