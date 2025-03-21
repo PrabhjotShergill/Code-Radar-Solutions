@@ -1,6 +1,6 @@
 #include<stdio.h>
 
-int search(int arr, int max){
+int search(int arr, int max, int n){
     int s=0, e=n-1;
     int mid = s+(e-s)/2;
     int ans = 0;
@@ -39,6 +39,6 @@ int main(){
         }
     }
 
-    search(arr[], max);
+    search(arr[], max, n);
     return 0;
 }
