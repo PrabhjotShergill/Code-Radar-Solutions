@@ -9,7 +9,7 @@ int main(){
     
     for(int i=0; i<n; i++){
         int sum=0;
-        while(arr[i] > 0){
+        while(arr[i] != 0){
             int digit = arr[i]%10;
             sum += digit;
             arr[i] /= 10;
@@ -18,7 +18,7 @@ int main(){
     }
 
     for(int i=0; i<n; i++){
-        printf("%d", arr[i]);
+        printf("%d ", arr[i]);
     }
     return 0;
 }
