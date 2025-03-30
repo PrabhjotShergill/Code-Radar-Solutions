@@ -10,7 +10,7 @@ int main(){
     int T;
     scanf("%d", &T);
 
-    for(int i=0; i<n/2; i++){
+    for(int i=0; i<n; i++){
         for(int j=i+1; j<n; j++){
             if(arr[i] + arr[j] == T){
                 printf("%d %d\n", arr[i], arr[j]);
