@@ -8,7 +8,10 @@ int nextPrimeDigit(int digit) {
 
 int incrementToPrimeDigits(int N) {
     int result = 0, place = 1;
-    
+    if(N == 0){
+        printf("2");
+        return 0;
+    }
     while (N > 0) {
         int digit = N % 10; // Extract last digit
         result = nextPrimeDigit(digit) * place + result; // Update result
