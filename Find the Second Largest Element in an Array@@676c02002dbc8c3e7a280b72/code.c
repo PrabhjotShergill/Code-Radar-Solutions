@@ -20,12 +20,13 @@ int main(){
             seco_max = arr[i];
         }
     }
-    if(max == seco_max){
-        printf("-1");
-    }
-    else if(seco_max < 0){
+    if(seco_max < 0){
         printf("-20");
     }
+    else if(max == seco_max){
+        printf("-1");
+    }
+
     else{
         printf("%d", seco_max);
     }
