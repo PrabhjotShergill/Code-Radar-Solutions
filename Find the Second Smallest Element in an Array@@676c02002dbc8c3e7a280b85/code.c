@@ -20,7 +20,7 @@ int main(){
         }
     }
 
-    if(min1 = min2){
+    if(min1 == min2){
         printf("-1");
     }
 
