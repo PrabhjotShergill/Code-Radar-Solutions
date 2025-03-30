@@ -13,14 +13,10 @@ int main(){
         if(arr[i] > max){
             max = arr[i];
         }
-    }
 
-    for(int i=0; i<n; i++){
-        if(arr[i] != max && arr[i] > seco_max){
+        else if(arr[i] > seco_max && arr[i] < max){
             seco_max = arr[i];
         }
     }
-
-    printf("%d", seco_max);
     return 0;
 }
