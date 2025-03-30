@@ -11,9 +11,9 @@ int main(){
     scanf("%d", &T);
 
     for(int i=0; i<n; i++){
-        for(int j=1; j<n-1; j++){
+        for(int j=i+1; j<n; j++){
             if(arr[i] + arr[j] == T){
-                printf("%d %d\n", arr[0], arr[1]);
+                printf("%d %d\n", arr[i], arr[j]);
             }
         }
     }
