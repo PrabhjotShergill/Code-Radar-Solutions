@@ -18,5 +18,7 @@ int main(){
             seco_max = arr[i];
         }
     }
+
+    printf("%d", seco_max);
     return 0;
 }
