@@ -19,7 +19,12 @@ int main(){
             seco_max = arr[i];
         }
     }
-
-    printf("%d", seco_max);
+    if(max == seco_max){
+        printf("-1");
+    }
+    else{
+        printf("%d", seco_max);
+    }
+    
     return 0;
 }
