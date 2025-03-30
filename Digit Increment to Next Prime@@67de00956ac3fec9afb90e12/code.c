@@ -7,6 +7,9 @@ int nextPrimeDigit(int digit) {
 }
 
 int incrementToPrimeDigits(int N) {
+    if(N == 0){
+        return 2;
+    }
     int result = 0, place = 1;
     while (N > 0) {
         int digit = N % 10; // Extract last digit
@@ -14,9 +17,7 @@ int incrementToPrimeDigits(int N) {
         place *= 10;
         N /= 10;
     }
-    if(N == 0){
-        return 2;
-    }
+
     return result;
 }
 
