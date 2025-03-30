@@ -9,7 +9,7 @@ int main(){
         scanf("%d", &arr[i]);
     }
 
-    int max = arr[0], seco_max=INT_MIN;
+    int max = arr[0], seco_max=arr[0];
     for(int i=1; i<n; i++){
         if(arr[i] > max){
             seco_max = max;
