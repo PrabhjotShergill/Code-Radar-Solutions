@@ -19,17 +19,21 @@ int main(){
         max = arr[1];
         seco_max = arr[0];        
     }
+
+    int all_same = 1;
     for(int i=1; i<n; i++){
         if(arr[i] > max){
             seco_max = max;
             max = arr[i];
+            all_same = 0;
         }
 
         else if(arr[i] > seco_max && arr[i] < max){
             seco_max = arr[i];
+            all_same = 0;
         }
     }
-    if(max == seco_max){
+    if(all_same){
         printf("-1");
     }
 
