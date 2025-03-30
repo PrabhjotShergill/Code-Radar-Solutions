@@ -12,6 +12,7 @@ int main(){
     int max = arr[0], seco_max=INT_MIN;
     for(int i=1; i<n; i++){
         if(arr[i] > max){
+            seco_max = max;
             max = arr[i];
         }
 
