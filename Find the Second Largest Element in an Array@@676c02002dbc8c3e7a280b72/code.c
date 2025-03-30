@@ -23,6 +23,9 @@ int main(){
     if(max == seco_max){
         printf("-1");
     }
+    else if(seco_max < 0){
+        printf("-20");
+    }
     else{
         printf("%d", seco_max);
     }
