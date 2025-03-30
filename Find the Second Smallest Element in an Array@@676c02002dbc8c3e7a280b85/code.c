@@ -8,6 +8,14 @@ int main(){
     }
 
     int min1=arr[0], min2=arr[0];
+    if(arr[0] < arr[1]){
+        min1 = arr[0];
+        min2 = arr[1];
+    }
+    else{
+        min1 = arr[1];
+        min2 = arr[0];
+    }
 
     for(int i=1; i<n; i++){
         if(arr[i] < min1){
