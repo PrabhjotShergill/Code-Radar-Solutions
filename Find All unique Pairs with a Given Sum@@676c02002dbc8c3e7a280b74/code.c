@@ -16,7 +16,12 @@ int main(){
                 if(ele1 == arr[0] && ele2 == arr[1]){
                     return 0;
                 }
-                printf("%d %d\n", arr[i], arr[j]);
+                else{
+                    printf("%d %d\n", arr[i], arr[j]);
+                    ele1 = arr[i];
+                    ele2 = arr[j];
+                }
+
             }
         }
     }
