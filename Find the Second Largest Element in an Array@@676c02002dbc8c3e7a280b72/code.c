@@ -9,17 +9,8 @@ int main(){
         scanf("%d", &arr[i]);
     }
 
-    int max, seco_max;
-    if(arr[0] > arr[1]){
-        max = arr[0];
-        seco_max = arr[1];
-    }
-
-    else{
-        max = arr[1];
-        seco_max = arr[0];        
-    }
-    for(int i=2; i<n; i++){
+    int max =arr[0], seco_max=arr[0];
+    for(int i=1; i<n; i++){
         if(arr[i] > max){
             seco_max = max;
             max = arr[i];
