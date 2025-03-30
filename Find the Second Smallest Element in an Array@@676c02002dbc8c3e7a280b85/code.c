@@ -7,7 +7,11 @@ int main(){
         scanf("%d", &arr[i]);
     }
 
-    int min1=arr[0], min2=arr[0];
+    if(n<2){
+        printf("-1");
+        return 0 ;
+    }
+    int min1, min2;
     if(arr[0] < arr[1]){
         min1 = arr[0];
         min2 = arr[1];
