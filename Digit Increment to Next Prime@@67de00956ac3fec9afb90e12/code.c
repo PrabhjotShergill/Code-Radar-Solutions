@@ -2,7 +2,7 @@
 
 int nextPrimeDigit(int digit) {
     // Mapping of digits to their next prime equivalent
-    int primeDigits[10] = {0, 2, 3, 5, 5, 7, 7, 2, 2, 2};
+    int primeDigits[10] = {2, 2, 3, 5, 5, 7, 7, 2, 2, 2};
     return primeDigits[digit];
 }
 
